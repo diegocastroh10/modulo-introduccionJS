@@ -1,0 +1,155 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+        "header header"
+        "section section"
+        "main main";
+    gap: 5px 5px;
+    background-color: rgb(48, 48, 48);
+    
+}
+
+@media (max-width: 320px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "section"
+            "main";
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100vh;
+
+    }
+
+    .grafico {
+        width: 100vh;
+        height: 300px; /* Ajusta la altura según tus necesidades */
+    }
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#titulo {
+    color: white;
+}
+
+.container_script {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    /* border: 1px solid blue; */
+    background-color: rgb(173, 173, 173);
+    border-radius: 5px;
+}
+    .container-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 250px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+        #h3_pesos {
+            text-align: center;
+            padding: auto;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        input[type="number"] {
+            text-align: center;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .currencyinput {
+            border: 1px inset rgb(173, 173, 173);
+            margin-bottom: 1rem;
+            background-color: white;
+        }
+        .currencyinput input {
+            border: 0;
+        }
+
+        #p_moneda {
+            margin-bottom: 0.3rem;
+            color: white;
+        }
+
+        #moneda {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+
+        #button_buscar {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            background-color:aqua;
+            color: white;
+        }
+
+        #h5_resultado {
+            color: white;
+        }
+        
+        
+
+.grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    width: 800px;
+    /* border: 1px solid rgb(255, 255, 255);     */
+    margin: 0px;
+}
+    .grafica {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+
+
